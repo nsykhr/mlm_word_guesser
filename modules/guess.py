@@ -8,7 +8,7 @@ from typing import List, Tuple, Union
 
 punctuation += '«»—…“”*№–'
 punctuation = set(punctuation)
-stopwords = set(stopwords.words('russian'))
+stopwords = set(stopwords.words('russian')) | set(stopwords.words('english'))
 
 
 class Guess:
